@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Customer Churn Predictor</title>
+
+    <!-- CSS LINK (MOST IMPORTANT) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="card">
+    <h1>🤖 AI Customer Churn Predictor</h1>
+    <p class="subtitle">Predict whether a customer will stay or leave</p>
+
+    <form method="POST">
+        <input type="number" name="age" placeholder="Customer Age" required>
+        <input type="number" name="charges" placeholder="Monthly Charges" required>
+        <input type="number" name="tenure" placeholder="Tenure (Years)" required>
+
+        <button type="submit">✨ Predict Now</button>
+    </form>
+
+    {% if result %}
+        <div class="result">
+            {{ result }}
+        </div>
+    {% endif %}
+
+    <p class="footer">Made with ❤️ using Machine Learning</p>
+</div>
+
+</body>
+</html>

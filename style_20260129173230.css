@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    background: linear-gradient(
+        -45deg,
+        #ff9a9e,
+        #fad0c4,
+        #a18cd1,
+        #667eea,
+        #89f7fe
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
